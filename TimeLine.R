@@ -1,7 +1,8 @@
+
+#Time Line creada manualmente
 library(ggplot2)
 
 yr <- c(1985:2019)
-#y_axis <- c('Desembarque', 'CPUE', 'Cruceros')
 
 LAmNorte <- ggplot(NULL) + 
   annotate("rect", xmin=1984.5, xmax=2019.5, ymin=14, ymax=15, alpha=.8, fill="red2") + #desembarque
@@ -43,8 +44,14 @@ LAmNorte <- ggplot(NULL) +
 
 LAmNorte
 
-?annotate
+dir()
+setwd('~/Documents/GitHub/TimeLine_Plot/')
+ggsave(LAmNorte, file='Datos_LAmNorte.png', width=9, height=5, dpi=300)
 
+
+
+
+# Otra forma no explorada del todo
 
 library(vistime)
 
@@ -78,7 +85,6 @@ vistime(LAmNorte.data, events = "DatosEntrada", groups = "DeviceManufacturer",
 
 ?vistime
 
-timeline(device.data)
 
 
 
