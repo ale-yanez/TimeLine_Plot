@@ -49,7 +49,7 @@ setwd('~/Documents/GitHub/TimeLine_Plot/')
 ggsave(LAmNorte, file='Datos_LAmNorte.png', width=9, height=5, dpi=300)
 
 
-
+# Grafico subido a GitHub
 
 # Otra forma no explorada del todo
 
