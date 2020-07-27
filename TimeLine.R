@@ -91,6 +91,8 @@ vistime(LAmNorte.data, events = "DeviceName", groups = "DeviceManufacturer",
 
 
 
+# comentario
+
 
 # LAmSur
 
