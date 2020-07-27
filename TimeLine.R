@@ -91,12 +91,6 @@ vistime(LAmNorte.data, events = "DeviceName", groups = "DeviceManufacturer",
 
 
 
-# comentario asdfaf
-
-# adskfadklalsdkf
-sadjfhsdkajfhjkdsa
-
-
 # LAmSur
 
 yrSur <- c(1979:2019)
