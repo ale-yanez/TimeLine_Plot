@@ -2,10 +2,10 @@
 #Time Line creada manualmente
 library(ggplot2)
 
-yr <- c(1985:2019)
+yr <- c(1985:2020)
 
 LAmNorte <- ggplot(NULL) + 
-  annotate("rect", xmin=1984.5, xmax=2019.5, ymin=14, ymax=15, alpha=.8, fill="red2") + #desembarque
+  annotate("rect", xmin=1984.5, xmax=2020.5, ymin=14, ymax=15, alpha=.8, fill="red2") + #desembarque
   annotate("text", x=2000, y=14.5, label="Desembarque", colour="white") +
   
   annotate("rect", xmin=1986.5, xmax=1991.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 1
@@ -21,13 +21,13 @@ LAmNorte <- ggplot(NULL) +
   annotate("rect", xmin=2010.5, xmax=2019.5, ymin=10, ymax=11, alpha=.8, fill="green4") +  # crucero bloq 3
   annotate("text", x=2004, y=10.5, label="Biomasa Crucero", colour="white") +
   
-  annotate("rect", xmin=1992.5, xmax=2019.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid2") + # prop hembras
+  annotate("rect", xmin=1992.5, xmax=2020.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid2") + # prop hembras
   annotate("rect", xmin=1984.5, xmax=1992.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid4") + # prop hembras
   annotate("text", x=2003, y=8.5, label="Prop Hembras", colour="white") +
   
   annotate("rect", xmin=1984.5, xmax=1986.5, ymin=6, ymax=7, alpha=.8, fill="coral1") +  # ET Flota
   annotate("rect", xmin=1992.5, xmax=2012.5, ymin=6, ymax=7, alpha=.8, fill="coral1") + # ET Flota
-  annotate("rect", xmin=2013.5, xmax=2019.5, ymin=6, ymax=7, alpha=.8, fill="coral1") +# ET Flota
+  annotate("rect", xmin=2013.5, xmax=2020.5, ymin=6, ymax=7, alpha=.8, fill="coral1") +# ET Flota
   annotate("text", x=2003, y=6.5, label="ET Flota", colour="white") +
   
   #annotate("segment", x=1999, xend=1999, y=4, yend=5, colour="gold2") +          # ET Crucero
@@ -38,7 +38,7 @@ LAmNorte <- ggplot(NULL) +
   
   annotate("rect", xmin=2011, xmax=2011, ymin=3, ymax=16, alpha=.8, fill="grey")  + # Espacio
   theme_bw() + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) +
-  xlab('Años') + scale_x_continuous(breaks = round(seq(min(yr), max(yr), by = 2),1)) +
+  xlab('Años') + scale_x_continuous(breaks = round(seq(min(yr), max(yr), by = 5),1)) +
   theme(axis.text.y=element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank())
 
 

@@ -14,6 +14,6 @@ La segunda parte es un código extraído desde la web el cual no utilice por no 
 
 
 
-Prueba de commits iniciales
-
-cambios para cote
+#### To Do
+-[ ] Agregar años al inicio de cada barra
+-[ ] Agregar barra para datos de pesos medios
