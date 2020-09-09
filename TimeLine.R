@@ -93,14 +93,14 @@ vistime(LAmNorte.data, events = "DeviceName", groups = "DeviceManufacturer",
 
 # LAmSur
 
-yrSur <- c(1979:2019)
+yrSur <- c(1979:2020)
 
 LAmSur <- ggplot(NULL) + 
-  annotate("rect", xmin=1978.5, xmax=2019.5, ymin=14, ymax=15, alpha=.8, fill="red2") + #desembarque
+  annotate("rect", xmin=1978.5, xmax=2020.5, ymin=14, ymax=15, alpha=.8, fill="red2") + #desembarque
   annotate("text", x=2000, y=14.5, label="Desembarque", colour="white") +
   
   annotate("rect", xmin=1981.5, xmax=1983.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 1
-  annotate("rect", xmin=1984.5, xmax=2019.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 2
+  annotate("rect", xmin=1984.5, xmax=2020.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 2
   annotate("text", x=2000, y=12.5, label="CPUE", colour="white") +
   
   #  annotate("segment", x=1997, xend=1997, y=10, yend=11, colour="green4") +            # crucero bloq 1
@@ -110,14 +110,14 @@ LAmSur <- ggplot(NULL) +
   annotate("rect", xmin=2010.5, xmax=2019.5, ymin=10, ymax=11, alpha=.8, fill="green4") +  # crucero bloq 4
   annotate("text", x=2004, y=10.5, label="Biomasa Crucero", colour="white") +
   
-  annotate("rect", xmin=1996.5, xmax=2019.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid2") + # prop hembras
+  annotate("rect", xmin=1996.5, xmax=2020.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid2") + # prop hembras
   annotate("rect", xmin=1978.5, xmax=1996.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid4") + # prop hembras
   annotate("text", x=2003, y=8.5, label="Prop Hembras", colour="white") +
   
   annotate("rect", xmin=1980.5, xmax=1981.5, ymin=6, ymax=7, alpha=.8, fill="coral1") +  # ET Flota
   annotate("rect", xmin=1985.5, xmax=1986.5, ymin=6, ymax=7, alpha=.8, fill="coral1") + # ET Flota
   annotate("rect", xmin=1993.5, xmax=1999.5, ymin=6, ymax=7, alpha=.8, fill="coral1") +# ET Flota
-  annotate("rect", xmin=2002.5, xmax=2019.5, ymin=6, ymax=7, alpha=.8, fill="coral1") +# ET Flota
+  annotate("rect", xmin=2002.5, xmax=2020.5, ymin=6, ymax=7, alpha=.8, fill="coral1") +# ET Flota
   annotate("text", x=2006, y=6.5, label="ET Flota", colour="white") +
   
   #annotate("segment", x=1999, xend=1999, y=4, yend=5, colour="gold2") +          # ET Crucero
@@ -127,14 +127,14 @@ LAmSur <- ggplot(NULL) +
   
   annotate("rect", xmin=2011, xmax=2011, ymin=3, ymax=16, alpha=.8, fill="grey")  + # Espacio
   theme_bw() + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) +
-  xlab('Años') + scale_x_continuous(breaks = round(seq(min(yrSur), max(yrSur), by = 2),1)) +
+  xlab('Años') + scale_x_continuous(breaks = round(seq(1978, max(yrSur), by = 2),1)) +
   theme(axis.text.y=element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank())
 
 
 LAmSur
 
 dir()
-setwd('~/Documents/GitHub/TimeLine_Plot/')
+#setwd('~/Documents/GitHub/TimeLine_Plot/')
 ggsave(LAmSur, file='Datos_LAmSur.png', width=9, height=5, dpi=300)
 
 
