@@ -14,6 +14,7 @@ La segunda parte es un código extraído desde la web el cual no utilice por no 
 
 
 
-#### To Do
--[ ] Agregar años al inicio de cada barra
--[ ] Agregar barra para datos de pesos medios
+#### To Do List
+- [x] Actualizar a Evaluación 2020
+- [ ] Agregar años al inicio de cada barra
+- [ ] Agregar barra para datos de pesos medios
