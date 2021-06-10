@@ -12,13 +12,13 @@ LAmNorte <- ggplot(NULL) +
   annotate("rect", xmin=1992.5, xmax=2009.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 2
   annotate("rect", xmin=2011.5, xmax=2012.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 3
   #annotate("segment", x=2012, xend=2012, y=12, yend=13, colour="dodgerblue2") +            # cpue bloq 3
-  annotate("rect", xmin=2014.5, xmax=2019.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 4 
+  annotate("rect", xmin=2014.5, xmax=2020.5, ymin=12, ymax=13, alpha=.8, fill="dodgerblue2") + # cpue bloq 4 
   annotate("text", x=2000, y=12.5, label="CPUE", colour="white") +
   
 #  annotate("segment", x=1997, xend=1997, y=10, yend=11, colour="green4") +            # crucero bloq 1
   annotate("rect", xmin=1996.5, xmax=1997.5, ymin=10, ymax=11, alpha=.8, fill="green4") + # crucero bloq 1
   annotate("rect", xmin=1998.5, xmax=2009.5, ymin=10, ymax=11, alpha=.8, fill="green4") + # crucero bloq 2
-  annotate("rect", xmin=2010.5, xmax=2019.5, ymin=10, ymax=11, alpha=.8, fill="green4") +  # crucero bloq 3
+  annotate("rect", xmin=2010.5, xmax=2020.5, ymin=10, ymax=11, alpha=.8, fill="green4") +  # crucero bloq 3
   annotate("text", x=2004, y=10.5, label="Biomasa Crucero", colour="white") +
   
   annotate("rect", xmin=1992.5, xmax=2020.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid2") + # prop hembras
@@ -33,7 +33,7 @@ LAmNorte <- ggplot(NULL) +
   #annotate("segment", x=1999, xend=1999, y=4, yend=5, colour="gold2") +          # ET Crucero
   annotate("rect", xmin=1998.5, xmax=1999.5, ymin=4, ymax=5, alpha=.8, fill="gold2") +          # ET Crucero
   annotate("rect", xmin=2000.5, xmax=2009.5, ymin=4, ymax=5, alpha=.8, fill="gold2") +  # ET Crucero
-  annotate("rect", xmin=2010.5, xmax=2019.5, ymin=4, ymax=5, alpha=.8, fill="gold2") +  # ET Crucero
+  annotate("rect", xmin=2010.5, xmax=2020.5, ymin=4, ymax=5, alpha=.8, fill="gold2") +  # ET Crucero
   annotate("text", x=2005, y=4.5, label="ET Crucero", colour="white") +
   
   annotate("rect", xmin=2011, xmax=2011, ymin=3, ymax=16, alpha=.8, fill="grey")  + # Espacio
@@ -45,7 +45,7 @@ LAmNorte <- ggplot(NULL) +
 LAmNorte
 
 dir()
-setwd('~/Documents/GitHub/TimeLine_Plot/')
+setwd('~/GitHub/TimeLine_Plot/')
 ggsave(LAmNorte, file='Datos_LAmNorte.png', width=9, height=5, dpi=300)
 
 
@@ -107,7 +107,7 @@ LAmSur <- ggplot(NULL) +
   annotate("rect", xmin=1994.5, xmax=1995.5, ymin=10, ymax=11, alpha=.8, fill="green4") + # crucero bloq 1
   annotate("rect", xmin=1996.5, xmax=1997.5, ymin=10, ymax=11, alpha=.8, fill="green4") + # crucero bloq 2
   annotate("rect", xmin=1998.5, xmax=2009.5, ymin=10, ymax=11, alpha=.8, fill="green4") +  # crucero bloq 3
-  annotate("rect", xmin=2010.5, xmax=2019.5, ymin=10, ymax=11, alpha=.8, fill="green4") +  # crucero bloq 4
+  annotate("rect", xmin=2010.5, xmax=2020.5, ymin=10, ymax=11, alpha=.8, fill="green4") +  # crucero bloq 4
   annotate("text", x=2004, y=10.5, label="Biomasa Crucero", colour="white") +
   
   annotate("rect", xmin=1996.5, xmax=2020.5, ymin=8, ymax=9, alpha=.8, fill="darkorchid2") + # prop hembras
@@ -122,7 +122,7 @@ LAmSur <- ggplot(NULL) +
   
   #annotate("segment", x=1999, xend=1999, y=4, yend=5, colour="gold2") +          # ET Crucero
   annotate("rect", xmin=1998.5, xmax=2009.5, ymin=4, ymax=5, alpha=.8, fill="gold2") +  # ET Crucero
-  annotate("rect", xmin=2010.5, xmax=2019.5, ymin=4, ymax=5, alpha=.8, fill="gold2") +  # ET Crucero
+  annotate("rect", xmin=2010.5, xmax=2020.5, ymin=4, ymax=5, alpha=.8, fill="gold2") +  # ET Crucero
   annotate("text", x=2004, y=4.5, label="ET Crucero", colour="white") +
   
   annotate("rect", xmin=2011, xmax=2011, ymin=3, ymax=16, alpha=.8, fill="grey")  + # Espacio
